@@ -25,7 +25,7 @@ pygame.mixer.init()
 
 # Load and play background music
 try:
-    pygame.mixer.music.load('music/love.mp3')
+    pygame.mixer.music.load('music/love.ogg')
     pygame.mixer.music.set_volume(0.5)
     pygame.mixer.music.play(-1)  # -1 means loop indefinitely
 except Exception as e:
