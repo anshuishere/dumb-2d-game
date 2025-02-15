@@ -21,6 +21,15 @@ from stage import Stage
 
 # Initialize Pygame
 pygame.init()
+pygame.mixer.init()
+
+# Load and play background music
+try:
+    pygame.mixer.music.load('music/love.mp3')
+    pygame.mixer.music.set_volume(0.5)
+    pygame.mixer.music.play(-1)  # -1 means loop indefinitely
+except Exception as e:
+    print(f"Error loading music: {e}")
 
 # Game settings
 WIDTH, HEIGHT = 800, 600
